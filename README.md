@@ -14,7 +14,7 @@ RadioRecorder is a simple java app that continuously record an audio input and d
 ### Configuration
 - When you first launch RadioRecorder, it creates the `data/` folder which contains all recordings and also a `properties.rsp` file.
 - You will also have a configuration assistant started
-#### Configuration Assistant
+
 Beware ! Double check what you are writing because as for the moment (github.1.0) there isn't any kind of protection and it might result in parsing errors, forcing you to delete the `properties.rsp` file and to relaunch.
 Also, by default RadioRecorder uses stereo, you can't change it for the moment (github.1.0) except if you modify the code.
 - Choose a language between English `EN` and French `FR`
@@ -23,7 +23,7 @@ Also, by default RadioRecorder uses stereo, you can't change it for the moment (
 - Enter the sample rate, using a high one will increase quality (*depending on the sound card*) but will also increase size on disk
 - Enter the bit depth, using a high one will increase quality (*depending on the sound card*) but will also increase size on disk
 - Choose if you want to used signed value 
-- Choose if you want to use the big-endian mode
+- Choose if you want to use the big-endian mode 
 ### Commands
 - `help` displays all the commands available
 - `exit` quit RadioRecorder

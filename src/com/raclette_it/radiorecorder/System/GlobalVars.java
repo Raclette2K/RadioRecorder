@@ -46,9 +46,11 @@ public class GlobalVars {
     public static boolean SA_Signed = true;
     // Big endian mode [true]
     public static boolean SA_BigEndian = true;
+    // Channel mode [1 = mono / 2 = stereo]
+    public static int SA_Channels = 2;
 
     // Version of RadioRecord
-    public static String VERSION = "github.1.0";
+    public static String VERSION = "github.1.1";
 
     // Date format [24h is useful to prevent problems with the data cleaning]
     public static SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy;HH-mm-ss");

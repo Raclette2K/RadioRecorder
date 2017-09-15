@@ -42,6 +42,8 @@ public class Configure {
     private String bigEndian;
     // Language
     private String language;
+    //
+    private String channels;
 
     public static String confFileName = "properties.rsp";
     // Constructor
@@ -67,10 +69,13 @@ public class Configure {
         sampleHz = sc.nextLine();
         System.out.println(LanguageLoader.getString("audioBitDepth"));
         sampleBits = sc.nextLine();
+        System.out.println(LanguageLoader.getString("channels"));
+        channels = sc.nextLine();
         System.out.println(LanguageLoader.getString("signed"));
         signed = sc.nextLine();
         System.out.println(LanguageLoader.getString("bigEndian"));
         bigEndian = sc.nextLine();
+
 
         // Write the values in the configuration file
         createFile();
@@ -133,12 +138,14 @@ public class Configure {
         hm.put("sampleBits", sampleBits);
         hm.put("signed",signed);
         hm.put("bigEndian",bigEndian);
+        hm.put("channels", channels);
         GlobalVars.S_SessionRecord = Integer.parseInt(hm.get("sessionDuration"));
         GlobalVars.S_TimeKeepRecord = Integer.parseInt(hm.get("keepData"));
         GlobalVars.SA_SampleHz = Float.parseFloat(sampleHz);
         GlobalVars.SA_SampleInBits = Integer.parseInt(sampleBits);
         GlobalVars.SA_Signed = Boolean.parseBoolean(signed);
         GlobalVars.SA_Signed = Boolean.parseBoolean(bigEndian);
+        GlobalVars.SA_Channels = Integer.parseInt(hm.get("channels"));
         if(hm.get("language").equalsIgnoreCase("FR"))
             GlobalVars.language = LanguageList.FR;
         else
@@ -184,6 +191,7 @@ public class Configure {
         GlobalVars.SA_SampleInBits = Integer.parseInt(hashMap.get("sampleBits"));
         GlobalVars.SA_Signed = Boolean.parseBoolean(hashMap.get("signed"));
         GlobalVars.SA_Signed = Boolean.parseBoolean(hashMap.get("bigEndian"));
+        GlobalVars.SA_Channels = Integer.parseInt(hashMap.get("channels"));
         if(hashMap.get("language").equalsIgnoreCase("FR"))
             GlobalVars.language = LanguageList.FR;
         else

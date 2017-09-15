@@ -44,7 +44,7 @@ public class Record implements Runnable{
     private final int sampleInBits =  GlobalVars.SA_SampleInBits;
     private final boolean  signed = GlobalVars.SA_Signed;
     private final boolean  bigEndian = GlobalVars.SA_BigEndian;
-
+    private final int channels = GlobalVars.SA_Channels;
     // Constructor
     public Record()
     {
@@ -68,7 +68,7 @@ public class Record implements Runnable{
 
             try{
                 // Calls the RecordDirectSound class with the configuration
-                new RecordDirectSound(this.sessionRecord ,true, this.audioFormat,this.sampleHz, this.sampleInBits,1,this.signed,this.bigEndian, FileNameGenerator());
+                new RecordDirectSound(this.sessionRecord ,true, this.audioFormat,this.sampleHz, this.sampleInBits, this.channels,this.signed,this.bigEndian, FileNameGenerator());
             }catch (AudioLineException e){LanguageLoader.getString("E_noAudioIn");System.exit(-1);}
             // Inform the user that the current session i is over
             System.out.println("Session "+i+LanguageLoader.getString("sessionOver"));

@@ -1,0 +1,81 @@
+<!-- PUT THIS FILE IN THE SAME DIRECTORY AS THE RADIORECORDER JAR -->
+<language lang="fr">
+    <menu>
+        <commands>
+            <help>
+                <CMD_title>- Liste de toutes les commandes -</CMD_title>
+                <CMD_help>help : Affiche toutes les commandes</CMD_help>
+                <CMD_exit>exit : Quitte RadioRecorder (sans sauvegarder la session actuelle)</CMD_exit>
+                <CMD_start>start : Lancer l'enregistrement</CMD_start>
+                <CMD_stop>stop : Arrêter l'enregistrement à la fin de la session actuelle</CMD_stop>
+                <CMD_stope>stope : Arrête l'enregistrement à la fin de la session actuelle et quitte</CMD_stope>
+                <CMD_clean>clean : Supprime tous les enregistrements dans le dossier data</CMD_clean>
+                <showl>showl : Affiche la licence/EULA</showl>
+                <conf>conf : (Re)configurer RadioRecorder</conf>
+            </help>
+            <unknown>Commande inconnue ! Tapez 'help' pour voir la liste des commandes</unknown>
+            <stopConfirm>You are about to stop the record, please confirm.</stopConfirm>
+            <stop>L'enregistrement s'arrêtera à la fin de la sessions en cours.</stop>
+            <stop2>Pour forcer l'arrêt, utilisez la commande 'exit'.</stop2>
+            <stopeConfirmSuccess>RadioRecorder sera fermé à la fin de la session en cours.</stopeConfirmSuccess>
+            <stopConfirmFail>The record will not be stopped.</stopConfirmFail>
+            <noRecordRunning>Aucune session en cours, utilisez 'start'.</noRecordRunning>
+            <exit>Vous êtes sur le point de quitter, êtes-vous sur ?</exit>
+            <exitConfirm>RadioRecorder va s'arrêter maintenant !</exitConfirm>
+            <clean>Nettoyage du dossier "data"...</clean>
+            <clean2>Dossier "data" nettoyé.</clean2>
+            <cleanConfirm>Etes-vous sur de vouloir supprimer tous les enregistrements ?</cleanConfirm>
+            <cleanAborted>Opération avortée, aucune donnée n'a été supprimée.</cleanAborted>
+            <sessionRunning>Une session est en cours d'enregistrement.</sessionRunning>
+        </commands>
+        <main>
+            <copyrightNotice>RadioRecorder  Copyright (C) 2017 Pierre Boisselier
+                Ce programme vient SANS AUCUNE GARRANTIE.
+                C'est un logiciel libre, vous êtes libre de le redistribuer
+                sous certaines conditions; voir LICENSE.TXT.</copyrightNotice>
+            <helpNotice>Tapez 'help' pour voir toutes les commandes disponibles</helpNotice>
+        </main>
+    </menu>
+    <IO>
+        <TypeYN>Tapez 'Y' pour oui et 'N' pour non</TypeYN>
+        <datafolder>
+            <E_dataFolderNotExist>Le dossier data n'existe pas, création en cours...</E_dataFolderNotExist>
+            <I_dataFolderCreated>Fait.</I_dataFolderCreated>
+            <E_cantCreateDataFolder>Impossible de créer le dossier Data</E_cantCreateDataFolder>
+            <I_checkFolderPermissions>Vérifiez les permissions du dossier.</I_checkFolderPermissions>
+        </datafolder>
+    </IO>
+    <record>
+        <launchSession>Lancement de la session </launchSession>
+        <sessionOver> est terminée</sessionOver>
+        <recordStopped>L'enregistrement est terminé après </recordStopped>
+    </record>
+    <configuration>
+        <assistant>
+            <A_title>-- Assistant de configuration --</A_title>
+            <language>Language (tapez 'EN' ou 'FR')</language>
+            <dataDuration>Conservation des données (en jours) :</dataDuration>
+            <sessionDuration>Durée des sessions (en minutes) :</sessionDuration>
+            <advancedConfiguration>- Configuration avancée -</advancedConfiguration>
+            <sampleRate>Fréquence d'échantillonnage (16000) :</sampleRate>
+            <audioBitDepth>Profondeur de quantification (8) :</audioBitDepth>
+            <signed>Signé ? (true) :</signed>
+            <bigEndian>Utiliser le mode "Gros-Boutiste" ? (true) :</bigEndian>
+            <channels>Nombre de voix (2) [1 = mono / 2 = stereo] : </channels>
+        </assistant>
+        <msg>
+            <I_loadingConfiguration>Chargement de la configuration...</I_loadingConfiguration>
+            <I_configurationLoaded>Configuration chargée !</I_configurationLoaded>
+            <I_configurationSaved>Configuration sauvegardée !</I_configurationSaved>
+            <I_noConfigurationDetected>Aucune configuration détéctée !</I_noConfigurationDetected>
+
+            <E_cantDeleteOldConf>Impossible de supprimer l'ancien fichier de configuration ! Supprimez-le manuellement</E_cantDeleteOldConf>
+            <E_cantCreateConf>Impossible de créer le fichier de configuration ! Vérifiez les permissions du dossier</E_cantCreateConf>
+            <E_cantLoadConf>Impossible de charger la configuration ! Supprimez 'property.rsp' et relancez le programme</E_cantLoadConf>
+        </msg>
+    </configuration>
+    <errors>
+        <E_noAudioIn>Aucun cable audio connecté ! Veuillez en connecter un</E_noAudioIn>
+        <E_parseError>Nom de fichier incompatible</E_parseError>
+    </errors>
+</language>

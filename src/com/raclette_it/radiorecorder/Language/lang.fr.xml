@@ -61,6 +61,7 @@
             <audioBitDepth>Profondeur de quantification (8) :</audioBitDepth>
             <signed>Signé ? (true) :</signed>
             <bigEndian>Utiliser le mode "Gros-Boutiste" ? (true) :</bigEndian>
+            <channels>Nombre de voix (2) [1 = mono / 2 = stereo] : </channels>
         </assistant>
         <msg>
             <I_loadingConfiguration>Chargement de la configuration...</I_loadingConfiguration>

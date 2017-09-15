@@ -62,6 +62,7 @@
             <audioBitDepth>Audio Bit Depth (8) :</audioBitDepth>
             <signed>Signed ? (true) :</signed>
             <bigEndian>Use Big Endian ? (true) :</bigEndian>
+            <channels>Audio channels (2) [1 = mono / 2 = stereo] : </channels>
         </assistant>
         <msg>
             <I_loadingConfiguration>Loading configuration...</I_loadingConfiguration>

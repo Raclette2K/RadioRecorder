@@ -9,7 +9,7 @@ RadioRecorder is a simple java app that continuously record an audio input and d
 ### First Launch
 - Open a terminal and get in the same directory as RadioRecorder. 
 - Execute the command `java -jar RadioRecorder-github.X.X.jar`.
-- If you have trouble see the [Troubleshooting] sectiion "Launch"
+- If you have trouble see the [Troubleshooting] section "Launch"
 - If you want to have a launch script as well as to know what are the launch options available, check the [Advance Use] section "Launch"
 ### Configuration
 - When you first launch RadioRecorder, it creates the `data/` folder which contains all recordings and also a `properties.rsp` file.
@@ -33,4 +33,6 @@ You can choose the number of channels since version github.1.1, `1` for mono and
 - `stope` stop the recording and exit
 - `clean` delete all records in the data folder (and every file in it to be fair)
 - `conf` start the configuration assistant
+### Listen to previous recording
+Sadly, RadioRecorder uses the AU format. If you have a player that can read them natively it's nice and I'd be happy to know the name of it. Else, open Audacity and use the `File->Import->Raw Data` function. A window will appear and you need to enter the same configuration as RadioRecorder. Once done, you can listen to your file and if you want to convert it into something else, use the `File->Export Audio` function.
 

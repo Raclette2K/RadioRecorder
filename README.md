@@ -1,6 +1,6 @@
 # RadioRecorder
 For more informations : ~https://radiorec.raclette-it.com~
-This is a draft README.md some informations may be missing.
+<br>This is a draft README.md, some informations may be missing.
 ## What is RadioRecorder ?
 RadioRecorder is a simple java app that continuously record an audio input and divides it in X minutes sessions. It also deletes records past a certain date that is user defined.
 ## How to use it ?

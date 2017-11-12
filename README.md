@@ -16,7 +16,7 @@ RadioRecorder is a simple java app that continuously record an audio input and d
 - When you first launch RadioRecorder, it creates the `data/` folder which contains all recordings and also a `properties.rsp` file.
 - You will also have a configuration assistant started
 
-Beware ! Double check what you are writing because as for the moment (github.1.0) there isn't any kind of protection and it might result in parsing errors, forcing you to delete the `properties.rsp` file and to relaunch.
+Beware ! Double check what you are writing because as for the moment (github.1.1) there isn't any kind of protection and it might result in parsing errors, forcing you to delete the `properties.rsp` file and to relaunch.
 You can choose the number of channels since version github.1.1, `1` for mono and `2` for stereo.
 - Choose a language between English `EN` and French `FR`
 - Enter a number of days where recordings past them will be deleted
